@@ -1,0 +1,12 @@
+#Створення прикладних програм на мові Python, Лабораторна робота №4.3,
+print ('Vasya Marusyak, №11')
+
+a=float(input('a='))
+print("Початкове значення ")
+x=float(input('x='))
+eps=0.0001
+s=0
+while abs((x ** 2)- a ) > eps:
+    x = (1/2)*(x + a/x)
+    s+= 1
+print('result= ', float(x))
