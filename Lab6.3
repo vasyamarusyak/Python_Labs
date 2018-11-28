@@ -1,0 +1,13 @@
+# Створення прикладних програм на мові Python Лабораторна робота №6.3
+# Vasya Marusyak
+
+def change(a):
+    a=a.split()
+    a=a[::-1]
+    b=' '.join(a)
+    return b
+a='1'
+while len(a)!=0:
+    a=input('Введіть речення ')
+    naslidok=change(a)
+    print (naslidok)
