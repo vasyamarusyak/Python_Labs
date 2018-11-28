@@ -1,0 +1,36 @@
+# Створення прикладних програм на мові Python Лабораторна робота 7
+# Vasya Marusyak
+
+power = 0
+price = 1
+
+def showList (**lis):
+    for x in lis:
+        print ('{} - потужність: {}, вартість: {}$'.format(x, lis[x][power], lis[x][price]))
+
+def SerPrice (*lis):
+    aprice = 0
+    k = 0
+    average = 0
+    for x in Set:
+        if Set[x][power] > 100:
+            aprice += Set[x][price]
+            k += 1
+            average = aprice / k
+    return average
+    
+Set = {
+    'Авто1': [102,1000],
+    'Авто2': [94,2364],
+    'Авто3': [123,2000],
+    'Авто4': [112,3000],
+    'Авто5': [14,1321],
+    'Авто6': [55,4465],
+    'Авто7': [88,632],
+    'Авто8': [200,4000],
+    'Авто9': [300,5000],
+    'Авто10': [99,3297]
+    }
+
+showList(**Set)
+print('Середня вартість авто потужніть яких більше 100 к.с.: ',SerPrice(*Set))
