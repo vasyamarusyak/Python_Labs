@@ -3,7 +3,7 @@ from random import*
 from math import sqrt
 from math import pi
 root = Tk()
-root.title('Метод Монте-Карло')
+root.title('Метод 12345')
 root.geometry('650x650')
 
 label=Label(root, text='Графік квадрата та кола', font='Arial 15')
